@@ -34,10 +34,10 @@ Pod::Spec.new do |spec|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source       = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentFramework.zip" }
+  spec.source       = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentFramework.framework.zip" }
 #{ :git => "git@gitlab.com:Ambeent/Ambeent-IOS-Framework.git", :tag => "#{spec.version}" }
   #  spec.preserve_paths = "AmbeentFramework"
-   # spec.vendored_frameworks = "AmbeentFramework.framework"
+ #   spec.vendored_frameworks = "AmbeentFramework.framework"
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 #  spec.source_files  =  "AmbeentFramework/**/*.{h,swift,m}"
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # spec.requires_arc = true
+   spec.requires_arc = true
  # spec.static_framework = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
