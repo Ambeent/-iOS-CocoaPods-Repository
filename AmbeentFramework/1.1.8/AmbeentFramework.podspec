@@ -41,7 +41,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentFramework.zip" }
 #{ :git => "git@gitlab.com:Ambeent/Ambeent-IOS-Framework.git", :tag => "#{spec.version}" }
   #  spec.preserve_paths = "AmbeentFramework"
-  #  spec.vendored_frameworks = "AmbeentFramework"
+  #  spec.vendored_frameworks = "AmbeentFramework", "CoreDataModel"
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
 #  spec.source_files  =  "AmbeentFramework/**/*.{h,swift,m}"
