@@ -60,7 +60,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-   #spec.resources = "AmbeentFramework/*.{xcdatamodeld}"
+   spec.resources = "AmbeentFramework.framework/CoreDataModel.momd/SpeedModel.mom"
    #"CoreDataModel.xcdatamodeld"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
