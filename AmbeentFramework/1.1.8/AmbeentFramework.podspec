@@ -38,7 +38,10 @@ Pod::Spec.new do |spec|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source       = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentFramework.zip" }
+  spec.source = { :git => "https://github.com/Ambeent/-iOS-CocoaPods-Repository.git" }
+  # { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentFramework.zip" }
+  
+  
 #{ :git => "git@gitlab.com:Ambeent/Ambeent-IOS-Framework.git", :tag => "#{spec.version}" }
   #  spec.preserve_paths = "AmbeentFramework"
   #  spec.vendored_frameworks = "AmbeentFramework"
@@ -60,9 +63,9 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-   spec.resources = "AmbeentFramework.framework/CoreDataModel.momd/SpeedModel.mom"
+   spec.resources = "AmbeentFrameworkCoreData/*.{xcdatamodeld}"
    #"CoreDataModel.xcdatamodeld"
-
+   
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
