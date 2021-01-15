@@ -44,7 +44,7 @@ Pod::Spec.new do |spec|
   
 #{ :git => "git@gitlab.com:Ambeent/Ambeent-IOS-Framework.git", :tag => "#{spec.version}" }
   #  spec.preserve_paths = "AmbeentFramework"
-  #  spec.vendored_frameworks = "AmbeentFramework"
+    spec.vendored_frameworks = "AmbeentFramework.framework"
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   #spec.source_files  =  "AmbeentFrameworkCoreData/*.{xcdatamodeld}"
