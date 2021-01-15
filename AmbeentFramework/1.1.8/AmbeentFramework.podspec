@@ -47,7 +47,8 @@ Pod::Spec.new do |spec|
   #  spec.vendored_frameworks = "AmbeentFramework"
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-#  spec.source_files  =  "AmbeentFramework/**/*.{h,swift,m}"
+  #spec.source_files  =  "AmbeentFrameworkCoreData/*.{xcdatamodeld}"
+  #"AmbeentFramework/**/*.{h,swift,m}"
   #"AmbeentFramework/*.{h,m,swift}",
  # spec.exclude_files = "AmbeentFramework/Exclude"
 
@@ -63,7 +64,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-   spec.resources = "AmbeentFrameworkCoreData/*.{xcdatamodeld}"
+ #  spec.resources = "AmbeentFrameworkCoreData/*.{xcdatamodeld}"
    #"CoreDataModel.xcdatamodeld"
    
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
