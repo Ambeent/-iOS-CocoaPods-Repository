@@ -38,8 +38,8 @@ Pod::Spec.new do |spec|
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  spec.source = { :git => "https://github.com/Ambeent/-iOS-CocoaPods-Repository.git" }
-  # { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentFramework.zip" }
+  spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentFramework.zip" }
+  #{ :git => "https://github.com/Ambeent/-iOS-CocoaPods-Repository.git" }
   
   
 #{ :git => "git@gitlab.com:Ambeent/Ambeent-IOS-Framework.git", :tag => "#{spec.version}" }
