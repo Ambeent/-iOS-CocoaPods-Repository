@@ -48,12 +48,12 @@ Pod::Spec.new do |spec|
   #  spec.vendored_frameworks = "AmbeentFramework.framework"
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  #spec.source_files  =  "AmbeentFrameworkCoreData/*.{xcdatamodeld}"
+  spec.source_files  =  "AmbeentFramework/**/*.{h,swift,m}"
   #"AmbeentFramework/**/*.{h,swift,m}"
   #"AmbeentFramework/*.{h,m,swift}",
- # spec.exclude_files = "AmbeentFramework/Exclude"
+  spec.exclude_files = "AmbeentFramework/Exclude"
 
-#  spec.public_header_files = "AmbeentFramework/**/*.h"
+  spec.public_header_files = "AmbeentFramework/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Pod::Spec.new do |spec|
   #  you can include multiple dependencies to ensure it works.
 
    spec.requires_arc = true
- # spec.static_framework = true
+  spec.static_framework = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
    spec.dependency "Alamofire", "~> 5.0.0-rc.3"
