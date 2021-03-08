@@ -37,23 +37,23 @@ Pod::Spec.new do |spec|
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
- # spec.source       = { :git => "git@gitlab.com:Ambeent/Ambeent-IOS-Framework.git", :tag => "test.2.0" }
+  spec.source       = { :git => "git@gitlab.com:Ambeent/Ambeent-IOS-Framework.git", :tag => "test.1.0" }
 
-  spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/CompiledFramework/AmbeentFramework.framework.zip" }
+ # spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/CompiledFramework/AmbeentFramework.framework.zip" }
   #{ :git => "https://github.com/Ambeent/-iOS-CocoaPods-Repository.git" }
   
   
 #{ :git => "git@gitlab.com:Ambeent/Ambeent-IOS-Framework.git", :tag => "#{spec.version}" }
   #  spec.preserve_paths = "AmbeentFramework"
-    spec.vendored_frameworks = "AmbeentFramework.framework"
+ #   spec.vendored_frameworks = "AmbeentFramework.framework"
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  #spec.source_files  =  "AmbeentFramework/**/*.{h,swift,m}"
+  spec.source_files  =  "AmbeentFramework/**/*.{h,swift,m}"
   #"AmbeentFramework/**/*.{h,swift,m}"
   #"AmbeentFramework/*.{h,m,swift}",
-#  spec.exclude_files = "AmbeentFramework/Exclude"
+  spec.exclude_files = "AmbeentFramework/Exclude"
 
-  #spec.public_header_files = "AmbeentFramework/**/*.h"
+  spec.public_header_files = "AmbeentFramework/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -65,7 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.resource  = "icon.png"
-   #spec.resources = "AmbeentFramework/*.{xcdatamodeld}"
+   spec.resources = "AmbeentFramework/*.{xcdatamodeld}"
    #"CoreDataModel.xcdatamodeld"
    
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
@@ -90,8 +90,8 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-   spec.requires_arc = true
- #  spec.static_framework = true
+ #  spec.requires_arc = true
+   spec.static_framework = true
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
    spec.dependency "Alamofire", "~> 5.0.0-rc.3"
