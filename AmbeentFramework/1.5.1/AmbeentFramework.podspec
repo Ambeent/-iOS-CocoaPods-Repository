@@ -40,7 +40,7 @@ Pod::Spec.new do |spec|
   # spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/frameworkToSimulator/AmbeentFramework.framework.zip" }
   # spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentFramework.framework.zip" }
   # spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/OlderVersions/AmbeentFramework.framework.zip" }
-    spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentXC/AmbeentXCv1.5.1/AmbeentFramework.xcframework.zip" }
+    spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentXC/AmbeentXCv1.5.2/AmbeentFramework.xcframework.zip" }
   #  spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/frameworkToSimulator/AmbeentFramework.xcframework.zip" }
   #  spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/CompiledFramework/v1.4.6.6/AmbeentFramework.xcframework.zip" }
   
