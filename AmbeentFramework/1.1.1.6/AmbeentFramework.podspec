@@ -40,17 +40,17 @@ Pod::Spec.new do |spec|
   # spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/frameworkToSimulator/AmbeentFramework.framework.zip" }
   # spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentFramework.framework.zip" }
   # spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/OlderVersions/AmbeentFramework.framework.zip" }
-    spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentXC/AmbeentXCv1.1.1.6/AmbeentFramework.xcframework.zip" }
+ #   spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/AmbeentXC/AmbeentXCv1.1.1.4/AmbeentFramework.xcframework.zip" }
   #  spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/frameworkToSimulator/AmbeentFramework.xcframework.zip" }
   #  spec.source = { :http => "https://github.com/Ambeent/-iOS-CocoaPods-Repository/raw/main/CompiledFramework/v1.4.6.6/AmbeentFramework.xcframework.zip" }
-   # spec.source       = { :git => "git@gitlab.com:Ambeent/Ambeent-IOS-Framework.git" }
+    spec.source       = { :git => "git@gitlab.com:Ambeent/Ambeent-IOS-Framework.git" }
 
-  #{ :git => "https://github.com/Ambeent/-iOS-CocoaPods-Repository.git" }
+  #{ :git => "https://github.com/Ambeent/-iOS-CocoaPods-Repository.git", :branch => "AppIntegration" }
   
   
 #{ :git => "git@gitlab.com:Ambeent/Ambeent-IOS-Framework.git", :tag => "#{spec.version}" }
   #  spec.preserve_paths = "AmbeentFramework"
-    spec.vendored_frameworks = "AmbeentFramework.xcframework"
+ #   spec.vendored_frameworks = "AmbeentFramework.xcframework"
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
  
   #spec.source_files  =  "AmbeentFrameworkCoreData/*.{xcdatamodeld}"
@@ -60,10 +60,10 @@ Pod::Spec.new do |spec|
  
 #  spec.public_header_files = "AmbeentFramework/**/*.h"
  
- #  spec.source_files  =  "AmbeentFramework/**/*.{h,swift,m}"
- # spec.exclude_files = "AmbeentFramework/Exclude"
- # spec.public_header_files = "AmbeentFramework/**/*.h"
- #    spec.resources = "AmbeentFramework/*.{xcdatamodeld}"
+   spec.source_files  =  "AmbeentFramework/**/*.{h,swift,m}"
+  spec.exclude_files = "AmbeentFramework/Exclude"
+  spec.public_header_files = "AmbeentFramework/**/*.h"
+     spec.resources = "AmbeentFramework/*.{xcdatamodeld}"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -99,8 +99,8 @@ Pod::Spec.new do |spec|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
  
-   spec.requires_arc = true
- # spec.static_framework = true
+ #  spec.requires_arc = true
+  spec.static_framework = true
  
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
    spec.dependency "Alamofire", "~> 5.0.0-rc.3"
