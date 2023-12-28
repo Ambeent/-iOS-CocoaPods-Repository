@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
  
   spec.name         = "AmbeentFramework"
-  spec.version      = "1.7.2"
+  spec.version      = "1.7.3"
   spec.summary      = "Ambeent iOS Framework"
  
   spec.description  = "This product is provided by Ambeent Inc."
